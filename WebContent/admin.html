@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RiverFork University</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="topnav" id="myTopnav">
+		  
+
+		  	<a href="index.html">Home</a>
+		    <a href="signin.html" onclick="window.alert('Sign in to vote')" >Vote</a>
+			
+			<a href="signin.html" >Sign In</a>
+			<a href="signup.html" >Sign up</a>
+			<a href="#" style="float: right;"><i class="bi bi-person-circle"></i></a>
+			<a onclick="dark()" style="float: right;"><i class="bi bi-moon"></i></a>
+
+			
+			
+			
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="bi bi-three-dots-vertical"></i>
+		  </a>
+		</div>
+
+	<div id="home">
+		<div align="center" style="padding-top: 30px;">
+			<a href="index.html"><img src="images/footerlogo.png" alt="logo" width="300px;"></a><hr>
+		</div>
+	</div>
+
+	<div class="votebox">
+		<h1 align="center">Admin Panel</h1>
+		<hr>
+		<table border="2" align="center">
+			<tr>
+				<th>Total No of voters</th>
+				<th>22345</th>
+			</tr>
+			<tr>
+				<td>Voted</td>
+				<td>8945</td>
+			</tr>
+			<tr>
+				<td>Yet to vote</td>
+				<td>13310</td>
+			</tr>
+			<tr>
+				<td>Disquallified Voters</td>
+				<td>90</td>
+			</tr>
+		</table><br>
+		<div align="center">
+			<button onclick="getdata()" class="jus tooltip">Get Student wise Data</button>
+		</div>
+		
+		<div id="myDiv">
+			<div class="table-wrapper">
+			<table border="2" align="center" class="fl-table" id="myTable">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Voted</th>
+			</tr>
+			<tr>
+				<th><p id="stui"></p></th>
+				<th><p id="stun"></p></th>
+				<th><p id="stuv"></p></th>
+			</tr>
+
+		</table>
+		
+		</div>
+		<a onclick="addel()">Refresh</a>
+	</div>
+		
+	</div>
+
+</body>
+<footer>
+	<div align="center">
+		<img class="zoom" src="images/footerlogo.png" width="15%">
+		<p>This project - <span style="color: orange;"><i>College Election System</i></span> is created for Educational purpose on behalf of Enterprise Programming in KL University.</p>
+	</div>
+	<br>
+	
+</footer>
+</html>
